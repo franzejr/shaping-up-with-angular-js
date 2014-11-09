@@ -4,7 +4,7 @@ shaping-up-with-angular-js
 Angular JS Fundamentals
 
 
-Level 3: Forms, Models and Validations
+== Level 3: Forms, Models and Validations
 
 Introducing ng-model
 
