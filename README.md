@@ -13,7 +13,7 @@ ng-model binds the form element value to the property
 Examples:
 
 With a Checkbox
-```
+```html
 <input ng-model="review.terms" type="checkbox" /> I agree to the terms
 ```
 
