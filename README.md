@@ -12,7 +12,6 @@ If you're using Javascript to create a dynamic website, angular is a good choice
 - Angular helps create responsive (as in fact) websites
 - Angular plays well jQuery
 - Angular is easy to test
-- 
 
 What is Angular JS?
 A client-side Javascript Framework for adding interactivity to HTML.
@@ -33,6 +32,63 @@ Twitter Bootstrap
 </body>  </html>
 ```
 
+#### Modules
+
+- Where we write pieces of our Angular application
+- Makes our code more maintainable, testable and readable
+- Where we define dependencies for our app
+
+Creating Our First Module
+
+```javascript
+var app = angular.module('store', [ ]);
+```
+store: applicaiton name
+[ ] : dependencies (in that case we don't have dependencies)
+
+```html
+<!DOCTYPE html>  <html ng-app="store"> 
+<head> 
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" /> 
+</head>  <body> 
+<script type="text/javascript" src="angular.min.js"></script> 
+￼Run this module
+when the document
+```
+We use ng-app to bind our application name
+
+
+
+
+#### Expresions
+Numerical Operations
+```html
+<p>
+I am {{4 + 6}} 
+</p>
+```
+String Operations
+```html
+<p>
+{{"hello" + " you"}} 
+</p>
+```
++ More Operations: http://docs.angularjs.org/guide/expression
+
+
+#### Controllers
+
+Controllers are where we define our app's behavior by defining functions and values.
+
+```javascript
+(function(){
+ var app = angular.module('store', [ ]);
+ app.controller('StoreController', function(){
+
+ });
+
+});
+```
 
 ## Level 3: Forms, Models and Validations
 
