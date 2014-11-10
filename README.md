@@ -90,6 +90,35 @@ Controllers are where we define our app's behavior by defining functions and val
 });
 ```
 
+We can also store data inside a controller
+
+```javascript
+(function(){
+ var app = angular.module('store', [ ]);
+ app.controller('StoreController', function(){
+   this.product = gem;
+ });
+ 
+ var gem = { 
+   name: 'Dodecahedron',  price: 2.95,  description: '. . .', 
+  }
+
+});
+```
+
+Attaching our controller in a html page
+
+```html
+<body> 
+<div ng-controller="StoreController as store"> 
+￼<h1> {{store.product.name}} </h1>
+<h2> {{store.product.price}} </h2>
+<p> {{store.product.description}} </p>
+</div>
+</body>
+```
+
+
 ## Level 3: Forms, Models and Validations
 
 ### Introducing ng-model
